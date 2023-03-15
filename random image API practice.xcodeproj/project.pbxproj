@@ -7,23 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77FA2C6929C13CDF000F5C1B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 77FA2C6829C13CDF000F5C1B /* Kingfisher */; };
 		77FDC27629C03AA40035FA32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FDC27529C03AA40035FA32 /* AppDelegate.swift */; };
 		77FDC27829C03AA40035FA32 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FDC27729C03AA40035FA32 /* SceneDelegate.swift */; };
-		77FDC27A29C03AA40035FA32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FDC27929C03AA40035FA32 /* ViewController.swift */; };
 		77FDC27D29C03AA40035FA32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77FDC27B29C03AA40035FA32 /* Main.storyboard */; };
 		77FDC27F29C03AA50035FA32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77FDC27E29C03AA50035FA32 /* Assets.xcassets */; };
 		77FDC28229C03AA50035FA32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77FDC28029C03AA50035FA32 /* LaunchScreen.storyboard */; };
+		77FDC28A29C03AFE0035FA32 /* RandomImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FDC28929C03AFE0035FA32 /* RandomImageViewController.swift */; };
+		77FDC28C29C0566D0035FA32 /* RandomImageViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FDC28B29C0566D0035FA32 /* RandomImageViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		77FDC27229C03AA40035FA32 /* random image API practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "random image API practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77FDC27529C03AA40035FA32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77FDC27729C03AA40035FA32 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		77FDC27929C03AA40035FA32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		77FDC27C29C03AA40035FA32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		77FDC27E29C03AA50035FA32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77FDC28129C03AA50035FA32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77FDC28329C03AA50035FA32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77FDC28929C03AFE0035FA32 /* RandomImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomImageViewController.swift; sourceTree = "<group>"; };
+		77FDC28B29C0566D0035FA32 /* RandomImageViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RandomImageViewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77FA2C6929C13CDF000F5C1B /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,8 +62,9 @@
 			children = (
 				77FDC27529C03AA40035FA32 /* AppDelegate.swift */,
 				77FDC27729C03AA40035FA32 /* SceneDelegate.swift */,
-				77FDC27929C03AA40035FA32 /* ViewController.swift */,
 				77FDC27B29C03AA40035FA32 /* Main.storyboard */,
+				77FDC28929C03AFE0035FA32 /* RandomImageViewController.swift */,
+				77FDC28B29C0566D0035FA32 /* RandomImageViewController+Extension.swift */,
 				77FDC27E29C03AA50035FA32 /* Assets.xcassets */,
 				77FDC28029C03AA50035FA32 /* LaunchScreen.storyboard */,
 				77FDC28329C03AA50035FA32 /* Info.plist */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = "random image API practice";
+			packageProductDependencies = (
+				77FA2C6829C13CDF000F5C1B /* Kingfisher */,
+			);
 			productName = "random image API practice";
 			productReference = 77FDC27229C03AA40035FA32 /* random image API practice.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 77FDC26929C03AA40035FA32;
+			packageReferences = (
+				77FA2C6729C13CDF000F5C1B /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 77FDC27329C03AA40035FA32 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77FDC27A29C03AA40035FA32 /* ViewController.swift in Sources */,
+				77FDC28A29C03AFE0035FA32 /* RandomImageViewController.swift in Sources */,
 				77FDC27629C03AA40035FA32 /* AppDelegate.swift in Sources */,
 				77FDC27829C03AA40035FA32 /* SceneDelegate.swift in Sources */,
+				77FDC28C29C0566D0035FA32 /* RandomImageViewController+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +370,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		77FA2C6729C13CDF000F5C1B /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		77FA2C6829C13CDF000F5C1B /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77FA2C6729C13CDF000F5C1B /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 77FDC26A29C03AA40035FA32 /* Project object */;
 }
